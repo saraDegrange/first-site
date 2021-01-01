@@ -1,0 +1,80 @@
+@media screen and (max-width: 800px)/*tablette*/ {
+
+    h1{
+        font-size: 2em;
+    }
+    .presentation{
+        display: block ;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .textePresentation{
+        margin: 10px;
+        width: auto;
+        position: relative;
+    }
+    .imgpresentation{
+        margin-right: 0%;
+        float: right;
+        right: 10%;
+    }
+    .container{
+        margin-left: 10%;
+        width: 80%;
+    }
+    footer{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 415px)/*telephone*/{
+    h1{
+        font-size: 2em;
+    }
+    .textePresentation{
+        font-size: 14px;
+    }
+    .imgpresentation{
+        width: 40%;
+    }
+    .container{
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        flex-flow: column wrap;  
+    }
+    .fruitsl1, .fruitsl2, .fruitsl3{
+        font-size: 14px;
+    }
+    footer{
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width : 800px) and (max-height : 1100px) and (orientation:landscape)
+/*tablette orientation paysage*/ {
+    .presentation{
+        margin-left: 10%;
+        width: 80%;
+    }
+    .container{
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width : 415px) and (max-height : 820px) and (orientation:landscape)
+/*telephone orientation paysage*/{
+    .textePresentation{
+        font-size: 14px;
+    }
+    .fruitsl1, .fruitsl2, .fruitsl3{
+        font-size: 14px;
+    }
+    footer{
+        font-size: 14px;
+    }
+}
